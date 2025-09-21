@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📄 AI PDF Q&A Chatbot
 
 A free GenAI project using **FastAPI, Hugging Face, FAISS, and Next.js**.
@@ -30,3 +31,7 @@ npm run dev
 ```
 
 Open http://localhost:3000
+=======
+# genai-pdf-chatbot-frontend
+genai-pdf-chatbot-frontend
+>>>>>>> ac19323eb9c2ab914765114418532b9162a7782e
