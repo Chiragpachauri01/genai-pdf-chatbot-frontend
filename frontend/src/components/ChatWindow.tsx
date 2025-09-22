@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { askQuestion } from "../lib/api";
+import { askQuestion } from "@/lib/api";
 import MessageBubble from "./MessageBubble";
 
 export default function ChatWindow({ fileId }: { fileId: string }) {
+  console.log("Rendering ChatWindow with fileId:", fileId);
   const [messages, setMessages] = useState<{ role: string; text: string }[]>([]);
   const [input, setInput] = useState("");
 

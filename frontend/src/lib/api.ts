@@ -8,13 +8,17 @@ export async function uploadFile(file: File): Promise<string | null> {
       method: "POST",
       body: formData,
     });
+
     const data = await res.json();
-    return data.fileId;
+    console.log("Upload response:", data,res);
+
+    return data.fileId; // ✅ you'll now get the fileId from FastAPI
   } catch (err) {
-    console.error(err);
+    console.error("Upload error:", err);
     return null;
   }
 }
+
 
 export async function askQuestion(fileId: string, question: string): Promise<string | null> {
   try {
